@@ -874,10 +874,27 @@ footer h3 {
   gap: 93px;
 }
 
+@media screen and (max-width: 428px) {
+  .main-navigation {
+    display: none;
+  }
+  .contact-links-header {
+    display: none;
+  }
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .contact-links-header {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
 }
 
 /* Desktop design */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1158px) {
+  .contact-links-header {
+    flex-direction: row;
+  }
 }
